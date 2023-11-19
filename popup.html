@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloudflare Buddy</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <h1>DNS Record Creator</h1>
+  <div id="message"></div>
+  <div id="tokenFormContainer" style="display: none;">
+    <input type="text" id="apiTokenInput" placeholder="Enter your API token">
+    <button id="saveTokenButton">Save Token</button>
+  </div>
+  <div id="mainContainer" style="display: none;">
+    <form id="dnsForm">
+      <select required id="zone">
+        <option disabled selected>Domain</option>
+      </select>
+      <select required id="type">
+        <option disabled selected>Type</option>
+        <option value="A">A</option>
+        <option value="CNAME">CNAME</option>
+      </select>
+      <input type="text" id="name" placeholder="Name"><br>
+      <input type="text" id="content" placeholder="Content"><br>
+      <select id="proxied">
+        <option value="true">Proxied</option>
+        <option value="false">Not Proxied</option>
+      </select>
+      <button type="submit">Create Record</button>
+      <span id="changeTokenButton">Change API Token</span>
+    </form>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

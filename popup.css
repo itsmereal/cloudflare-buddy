@@ -1,0 +1,63 @@
+body {
+    font-family: -apple-system, "system-ui", Segoe UI, roboto, helvetica, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    margin: 10px;
+    font-size: 14px;
+    width: 250px;
+    max-width: 100%;
+}
+
+h1 {
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    color: tomato;
+    height: 22px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#message:empty {
+    display: none;
+}
+
+#changeTokenButton {
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    margin: 5px 0;
+    text-decoration: underline;
+    color: #6a6a6a;
+    cursor: pointer;
+}
+
+#changeTokenButton:hover {
+    color: #333;
+}
